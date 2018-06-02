@@ -1,0 +1,48 @@
+html body{
+/*    overflow-x: hidden;*/
+}
+body{
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+/*    flex-direction: row;*/
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #000;
+/*    margin: 0 auto;*/
+/*    padding: 0 10%;*/
+/*    margin: 0 10%;*/
+}
+.header{
+/*    order: 1;*/
+    width: 100%;
+/*    flex-direction: row;*/
+    
+}
+.logo{
+    width: 25%;
+    border: 1px solid #000;
+/*    display: block;*/
+}
+.search{
+    width: 25%;
+    border: 1px solid #000;
+}
+.nav{
+    width: 50%;
+    border: 1px solid #000;
+/*    display: block;*/
+}
+
+.slide{
+    width: 100%;
+/*    padding-bottom: calc((100%/1.6)*100);*/
+    height: calc((100%/1.6));
+    border: 1px solid #000;
+}
+.nav-ul li{
+    display: inline;
+    text-decoration: none;
+}
