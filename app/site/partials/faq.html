@@ -2,54 +2,120 @@
 	<head>
 		<title>Fequently Asked Questions -Cantrust staffing services</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="../../assets/css/styles.css" rel="stylesheet" title="CSS Styles"/>
         <link href="../../assets/css/reset.css" rel="stylesheet" title="CSS Styles"/>
+        <link href="../../assets/css/styles.css" rel="stylesheet" title="CSS Styles"/>
+        <link href="../../assets/css/type.css" rel="stylesheet" title="CSS Styles"/>
 	</head>
 	<body>
 		<div class="page-container">
             <div class="content-container">
-                <div class="logo">
-                    <img width="100px" height="50px"/>
-                </div>
-                <div class="burger-bun">
-                    <div class="hamburger" ></div>
-                    <div class="hamburger"> </div>
-                    <div class="hamburger"></div>
-                </div>
-                <div class="nav">
-                    <nav>
-                    <div class="search">
-                        <form>
-                            <input type="text" placeholder="Search">
-                            <button type="submit">S</button>
-                        </form>
+                <div class="header">
+                    <div class="logo">
+                        <img width="100px" height="50px"/>
                     </div>
-                    <ul class="nav-ul" >
-                        <li>About</li>
-                        <li>Testimonials</li>
-                        <li>Our Services</li>
-                        <li>FAQ</li>
-                    </ul>
-                    </nav>
-                </div>
-            
+                    <a id="menu">
+                        <div class="burger-bun">
+                            <div class="hamburger"></div>
+                            <div class="hamburger"></div>
+                            <div class="hamburger"></div>
+                            <div class="hamburger"></div>
+                        </div>
+                    </a>
+                        <nav id="drawer" class="nav">
+                            <div class="search">
+                                <form class="search-form">
+                                    <ul class="search-ul">
+                                            <li class="search-li">
+<!--#TODO:1-The growing input is pushing the button. Solve this-->
+                                                <input type="text" class='search-input' size="10" placeholder="Search"><button class="search-btn" type="submit">S</button>
+<!--end todo--------------->
+                                            </li>
+                                    </ul>
+                                <ul class="nav-ul" >
+                                    <li><a href"#">About</a></li>
+                                    <li><a href"#">Testimonials</a></li>
+                                    <li><a href"#">FAQ</a></li>
+                                    <li><a href"#">Services</a></li>
+                                    <li><img width="130px" height="50px"/></li>
+                            </ul>
+                                </form>
+                            </div>
+                        </nav>
+                </div>            
             <div class="slide">
-                <p>Question</p>
-                <p>Answer</p>
+                <p class='q-para'>Q: Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to</p>
+                <p class="a-para">A: Only if there is context provided with the question. Otherwise the</p>
+                <p class='q-para'>Q: Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to</p>
+                <p class="a-para">A: Only if there is context provided with the question. Otherwise the</p>
+
             </div>
-            <div class="slide">
-                <p>2nd</p>
-            </div>
-           <div class="slide">
-                <p>3rd</p>
-            </div>
-           <div class="slide">
-                <p>4th</p>
-            </div>
+
            <footer>
-                <p> footer</p>
+               <div class="email-div">
+                   <a class="email-a" href=""><span>cantrust</span><span></span>services@gmail.com</a>
+               </div>
+               <div class="footer-content">
+                   <div class="footer-logo">
+                       <img width="100px" height="50px"/>
+                   </div>
+                   <div class="form-container">
+                       <form>
+                           <input class="message-input" placeholder="Enter your email" type="text" >
+                <textarea class="message-area" placeholder = "Send us a message"></textarea>
+                       </form>
+                   </div>
+                   <div class="contacts-container">
+                       <ul class="contacts-ul">
+                           <li>Phone:</li><li>416-555-0001</li>
+                       </ul>
+                       <ul class="contacts-ul">
+                           <li>Fax:</li>
+                           <li>416-555-0001</li>
+
+                       </ul>
+                       <ul class="address-ul">                      <li>27-818 Broadview Ave, </li>   
+                           <li>
+                               Toronto, ON M4K2P7
+                           </li>
+                           <li>
+                               <a class="direction-a" href="#">Get Directions</a>
+                           </li>
+
+                       </ul>
+                   </div>
+                   <div class="footer-links-container" >
+<!---#todo:2 make this wrap if you add more lis to the ul-->
+                       <ul class="footer-links-ul">
+                           <li>Contact</li>
+                           <li>FAQ</li>
+                           <li>Terms</li>
+                           <li>Service</li>
+                           <li>Organizations</li>
+                           <li>Another Link</li>
+                           <li>and</li>
+                           <li>this</li>
+                       </ul>
+<!-------------------------------------------------->
+                   </div>
+               </div>
             </footer>
             </div>
         </div>
+            <script>
+
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('.content-container');
+      var drawer = document.querySelector('#drawer');
+
+      menu.addEventListener('click', function(e) {
+                drawer.classList.toggle('open');
+                e.stopPropagation();     
+      });
+
+    
+    </script>
 	</body>
 </html>
