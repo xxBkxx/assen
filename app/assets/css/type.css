@@ -12,6 +12,10 @@
         
     }
     
+    .search-input{
+        padding-left: 8px;
+    }
+    
     .q-para{
         font-size: 1.6em;
         font-weight: bold;
@@ -91,9 +95,13 @@
         /* Needed for Chrome------------*/
         font-family: "Arial", sans-serif;
         /* -----------------------------*/
-        
         padding-left: 10px;
         color: #666;
+    }
+    
+    .message-button{
+        color:#575757;
+        font-size: 1.1em;
     }
 /*
     textarea::placeholder{
